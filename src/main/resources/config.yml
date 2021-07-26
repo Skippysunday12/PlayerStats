@@ -1,0 +1,56 @@
+mySQL:
+  #ENABLE MUST BE SET TO TRUE FOR MYSQL TO WORK!!!
+  enable: false
+
+  #You can find this information in the MySQL section of your server provider, or if you are using XAMPP (or any other
+  #mysql software), in the users section of the database, and choose one of the accounts with
+  #"ALL PRIVALEGES" (very important)
+  username:
+
+  #Pretty self explanatory don't you think?
+  password:
+
+  #Required
+  IP:
+  port:
+
+  #Leave blank for default
+  database:
+
+  #What you want your table to be called
+  main:
+
+
+  #This option, when set to true, will update the database every time a player interacts with anything, so if you have a lot of players and not a
+  #lot of RAM, then you should expect some lag
+  update_on_interact: false
+
+
+  ##################################################################################################################
+  #IF YOU GET ERRORS, CHECK THE FOLLOWING THINGS:                                                                  #
+  #1. Is the login information correct?                                                                            #
+  #2. Is there a database in you SQL server called what is in the database field?                                  #
+  #3. Is the SQL server turned on?                                                                                 #
+  #4. If none of these are what is happening, go to the discord (link on spigot page) and ask questions there!     #
+  ##################################################################################################################
+
+  #For better instructions on how to set this up: https://youtu.be/LAFzy0kIHUI
+
+discord-settings:
+
+  #Enable this if you want to have the discord bot.
+  enabled: false
+
+  #Just watch the video
+  token:
+
+GUI:
+
+  #This option is to enable live updates for the in game GUI. What this means is that while viewing the gui, it will automatically update without
+  #the user having to reopen the menu.
+  live-updates: false
+
+  #This is the amount of time (in seconds) between each update. It must be in integer form, as in no decimals. If you
+  #put one in, plugin go BOOM! Not really, I wish though. Wouldn't that be great if plugins exploded? No JUST KIDDING
+  #pleeease don't quote me on that! But seriously, no decimals!
+  live-update-time: 5

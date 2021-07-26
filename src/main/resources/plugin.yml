@@ -1,0 +1,135 @@
+main: me.Skippysunday12.playerstats.PlayerStats
+name: PlayerStats
+version: ${project.version}
+author: Skippysunday12
+
+api-version: 1.16
+
+softdepend: [JDASpigot]
+
+commands:
+  canFly:
+    description: This tells you if a user can fly
+    permission: stat.canfly
+    permission-message: You do not have perms!
+
+  potfects:
+    description: This tells you what potion effects a player has
+    permission: stat.potfects
+    permission-message: You do not have perms!
+
+  surface:
+    description: This tells you what surface a player is standing on
+    permission: stat.surface
+    permission-message: You do not have perms!
+
+  where:
+    description: This tells you where a certain player is
+    permission: stat.where
+    permission-message: You do not have perms!
+
+  get:
+    description: This tells you a players health/hunger level
+    permission: stat.get
+    permission-message: You do not have perms!
+
+  stat:
+    description: This tells you various stats about a player
+    permission: stat.stat
+    permission-message: You do not have perms!
+
+  isop:
+    description: This tells you if a player is oppped
+    permission: stat.op
+    permission-message: You do not have perms!
+
+  namemcpage:
+    description: This brings you to a players namemc page, online or not
+    permission: stat.namemc
+    permission-message: You do not have perms!
+    aliases: nmcl
+
+  sendcustomlink:
+    description: This lets you send a custom link. Put http(s):// for it to function properly, and please use responsibly
+    permission: stat.customlink
+    permission-message: You do not have perms!
+    aliases: scl
+
+  bed:
+    description: This tells you where a players bed/bedspawn is. Location only works if a player is sleeping
+    permission: stat.bed
+    permission-message: You do not have perms!
+
+  compass:
+    description: This tells you where a players compass is pointing to
+    permission: stat.compass
+    permission-message: You do not have perms!
+    aliases: cmp
+
+  viewdistance:
+    description: This tells you a players chunk render distance
+    permission: stat.view
+    permission-message: You do not have perms!
+    aliases: vd
+
+  ping:
+    description: This tells you a players ping
+    permission: stat.ping
+    permission-message: You do not have perms!
+    aliases: pg
+
+  hand:
+    description: This tells you what is in a players hand/offhand
+    permission: stat.hand
+    permission-message: You do not have perms!
+
+  arrowsinbody:
+    description: This tells you how many arrows are sticking out of a player
+    permission: stat.arrows
+    permission-message: You do not have perms!
+    aliases: aib
+
+  getnick:
+    description: This tells you a players nickname
+    permission: stat.getnick
+    permission-message: You do not have perms!
+
+  getxp:
+    description: This tells you a players xp level
+    permission: stat.xp
+    permission-message: You do not have perms!
+
+  lastdamage:
+    description: This tells you the cause/amount of a players last damage
+    permission: stat.damage
+    permission-message: You do not have perms!
+
+  uuid:
+    description: This tells you a players uuid, or Universally Unique ID
+    permission: stat.uuid
+    permission-message: You do not have perms!
+
+  getall:
+    description: This pulls up a GUI that contains all of the stats obtainable through this plugin
+    permission: stat.getall
+    permission-message: You do not have perms!
+
+  getInv:
+    description: This pulls up a GUI that shows you a players echest/current viewed inventory
+    permission: stat.inv
+    permission-message: You do not have perms!
+
+  getSkin:
+    description: Spawn an NPC that has the skin of a player, only visiblle to you
+    permission: stat.getskin
+    permission-message: You do not have perms!
+
+  removeskins:
+    description: Remove all the spawned NPCs
+    permission: stat.getskin
+    permission-message: You do not have perms!
+
+  getworld:
+    description: Get the name of the world a player is in
+    permission: stat.world
+    permission-messgae: You do not have perms!

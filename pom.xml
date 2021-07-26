@@ -6,7 +6,7 @@
 
     <groupId>me.Skippysunday12</groupId>
     <artifactId>PlayerStats</artifactId>
-    <version>4.3</version>
+    <version>4.4-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>PlayerStats</name>

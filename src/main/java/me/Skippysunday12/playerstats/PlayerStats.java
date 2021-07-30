@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.stream.Collectors;
 
+import me.Skippysunday12.Commands.commands.*;
 import me.Skippysunday12.mysql.BotManager;
 import me.Skippysunday12.mysql.SQLSetup;
 import me.Skippysunday12.mysql.SQLdata;
@@ -18,36 +19,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.metadata.FixedMetadataValue;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import me.Skippysunday12.Commands.commands.ArrowsInBody;
-import me.Skippysunday12.Commands.commands.Bed;
-import me.Skippysunday12.Commands.commands.BedCompleter;
-import me.Skippysunday12.Commands.commands.CanFly;
-import me.Skippysunday12.Commands.commands.Compass;
-import me.Skippysunday12.Commands.commands.CustomLink;
-import me.Skippysunday12.Commands.commands.CustomName;
-import me.Skippysunday12.Commands.commands.Damage;
-import me.Skippysunday12.Commands.commands.Get;
-import me.Skippysunday12.Commands.commands.GetAll;
-import me.Skippysunday12.Commands.commands.GetCompleter;
-import me.Skippysunday12.Commands.commands.GetPing;
-import me.Skippysunday12.Commands.commands.GetStat;
-import me.Skippysunday12.Commands.commands.Hand;
-import me.Skippysunday12.Commands.commands.HandCompleter;
-import me.Skippysunday12.Commands.commands.Inventories;
-import me.Skippysunday12.Commands.commands.InventoriesCompleter;
-import me.Skippysunday12.Commands.commands.IsOp;
-import me.Skippysunday12.Commands.commands.Location;
-import me.Skippysunday12.Commands.commands.NameMCLink;
-import me.Skippysunday12.Commands.commands.PotionEffects;
-import me.Skippysunday12.Commands.commands.RenderDistance;
-import me.Skippysunday12.Commands.commands.StatCompleter;
-import me.Skippysunday12.Commands.commands.Surface;
-import me.Skippysunday12.Commands.commands.UUID;
-import me.Skippysunday12.Commands.commands.WorldCommand;
-import me.Skippysunday12.Commands.commands.XP;
-import me.Skippysunday12.Commands.commands.XPCompleter;
-
 
 
 public class PlayerStats extends JavaPlugin{
@@ -90,12 +61,14 @@ public class PlayerStats extends JavaPlugin{
         this.getCommand("getInv").setExecutor(new Inventories());
         this.getCommand("getinv").setTabCompleter(new InventoriesCompleter());
         this.getCommand("getworld").setExecutor(new WorldCommand());
+        this.getCommand("getskin").setExecutor(new SkinCommand());
+        this.getCommand("removeskins").setExecutor(new SkinRemoveCommand());
 
         instance = this;
         configurize();
         ms.setUpSql();
         try {
-            if(config.getBoolean("discord-settings.enabled") == true)
+            if(config.getBoolean("discord-settings.enabled"))
                 BotManager.discordManager();
         } catch (Exception e) {
             Bukkit.getLogger().info("[PlayerStats] Something went wrong while enabling the discord bot!");

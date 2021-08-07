@@ -38,7 +38,7 @@ public class SQLSetup {
             Bukkit.getServer().getLogger().log(Level.SEVERE, "[PlayerStats] You have mySQL enabled, but did not fill out the password. Please do that.");
             PlayerStats.sqlSetup = false;
         } else {
-            if(PlayerStats.config.getString("mySQL.password") == "-~-") {password = "";}
+            if(PlayerStats.config.getString("mySQL.password").equals("-~-")) {password = "";}
             else password = PlayerStats.config.getString("mySQL.password");
         }
 

@@ -367,6 +367,7 @@ public class GuiManager_1_13_Plus implements Guimanager{
 
 
         //42
+        /*
         item = new ItemStack(Material.ARMOR_STAND);
         meta = item.getItemMeta();
         meta.setDisplayName(ChatColor.GREEN + player.getName() + "'s Skin");
@@ -376,6 +377,8 @@ public class GuiManager_1_13_Plus implements Guimanager{
         meta.setLore(lore);
         item.setItemMeta(meta);
         maininv.setItem(42, item);
+
+         */
     }
 
 

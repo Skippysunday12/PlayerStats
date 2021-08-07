@@ -119,11 +119,6 @@ commands:
     permission: stat.inv
     permission-message: You do not have perms!
 
-  getSkin:
-    description: Spawn an NPC that has the skin of a player, only visiblle to you
-    permission: stat.getskin
-    permission-message: You do not have perms!
-
   removeskins:
     description: Remove all the spawned NPCs
     permission: stat.getskin

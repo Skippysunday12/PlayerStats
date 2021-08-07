@@ -7,7 +7,7 @@ mySQL:
   #"ALL PRIVALEGES" (very important)
   username:
 
-  #Pretty self explanatory don't you think?
+  #Pretty self explanatory don't you think? Put -~- for no password
   password:
 
   #Required
